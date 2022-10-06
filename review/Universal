@@ -15,7 +15,7 @@ maintab:Button('Infinite yield', function()
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
 end)
 
-maintab:Button('click tp', function()
+maintab:Button('click tp(kinda buggy)', function()
 	mouse = game.Players.LocalPlayer:GetMouse()
 tool = Instance.new("Tool")
 tool.RequiresHandle = false
