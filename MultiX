@@ -6,6 +6,10 @@ if game.PlaceId == 10819569010 then
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/Fall'),true))()
 end
 
+if game.PlaceId == 6441847031 then
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/Chaos'),true))()
+end
+
 game.StarterGui:SetCore("SendNotification", {
     Title    = "!Reminder!"; 
     Text     = "if the script didnt load it doesnt support the game"; 
