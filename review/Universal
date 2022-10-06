@@ -1,0 +1,61 @@
+local BlekLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/laderite/bleklib/main/library.lua"))()
+
+local win = BlekLib:Create({
+    Name = "MultiX(Universal)",
+    StartupSound = {
+        Toggle = false,
+        SoundID = "rbxassetid://6958727243",
+        TimePosition = 1
+    }
+})
+
+local maintab = win:Tab('Main')
+
+maintab:Button('Infinite yield', function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
+maintab:Button('click tp', function()
+	mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "Click Teleport"
+tool.Activated:connect(function()
+local pos = mouse.Hit+Vector3.new(0,2.5,0)
+pos = CFrame.new(pos.X,pos.Y,pos.Z)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+end)
+
+maintab:Button('cocohub', function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/MarsQQ/CocoHub/master/CocoZHub'),true))()
+end)
+
+maintab:Button('EclipseMM2', function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script'),true))()
+end)
+
+local charactertab = win:Tab('Character')
+
+charactertab:Button('Set Walkspeed Normal', function()
+   	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
+charactertab:Button('Set JumpPower Normal', function()
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 16
+end)
+
+charactertab:Slider('Walkspeed', 0, 16, 300, function(a)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = a
+end)
+
+charactertab:Slider('JumpPower', 0, 16, 300, function(a)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = a
+end)
+
+local uitab = win:Tab('UI')
+
+uitab:Button('Destroy GUI', function()
+    win:Exit()
+end)
