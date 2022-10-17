@@ -1,13 +1,13 @@
 if game.PlaceId == 537413528 then
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/Build%20A%20Boat%20For%20Treasure'),true))()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/Build%20A%20Boat%20For%20Treasure'),true))()
 end
 
 if game.PlaceId == 10819569010 then
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/Fall'),true))()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/Fall'),true))()
 end
 
 if game.PlaceId == 6441847031 then
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/Chaos'),true))()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/Chaos'),true))()
 end
 
 if game.PlaceId == 579955134 then
