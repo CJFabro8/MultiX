@@ -18,6 +18,10 @@ if game.PlaceId == 522527978 then
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/The%20Horror%20Mansion'),true))()
 end
 
+if game.PlaceId == 4608737604 then
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/Fight'),true))()
+end
+
 game.StarterGui:SetCore("SendNotification", {
     Title    = "!Reminder!"; 
     Text     = "Type (:Universal) to open the unsupported one"; 
