@@ -1,0 +1,145 @@
+---- script is working if something goes wrong its probably the game because I only tested on fencing.
+---- Replace the animation asset codes with what u want to replace them with different anims
+
+game.Players.LocalPlayer.Character.Animate.climb.ClimbAnim:Destroy()
+
+game.Players.LocalPlayer.Character.Animate.walk.WalkAnim:Destroy()
+
+game.Players.LocalPlayer.Character.Animate.jump.JumpAnim:Destroy()
+
+game.Players.LocalPlayer.Character.Animate.idle.Animation1:Destroy()
+
+game.Players.LocalPlayer.Character.Animate.idle.Animation2:Destroy()
+
+game.Players.LocalPlayer.Character.Animate.sit.SitAnim:Destroy()
+
+game.Players.LocalPlayer.Character.Animate.fall.FallAnim:Destroy()
+
+game.Players.LocalPlayer.Character.Animate.toolnone.ToolNoneAnim:Destroy()
+
+
+---Now you just replace them all with newly made from scratch animations lol
+
+
+newanim = Instance.new("Animation")
+
+newanim.Parent = game.Players.LocalPlayer.Character.Animate.idle
+
+newanim.Archivable = true
+
+newanim.AnimationId = "http://www.roblox.com/asset/?id=180435571"
+
+newanim.Name = "Animation1"
+
+newanim:IsA("Animation")
+
+newanim.Archivable = true
+
+
+newanim1 = Instance.new("Animation")
+
+newanim1.Parent = game.Players.LocalPlayer.Character.Animate.idle
+
+newanim1.Archivable = true
+
+newanim1.AnimationId = "http://www.roblox.com/asset/?id=180435792"
+
+newanim1.Name = "Animation2"
+
+newanim1:IsA("Animation")
+
+newanim1.Archivable = true
+
+
+
+newanim2 = Instance.new("Animation")
+
+newanim2.Parent = game.Players.LocalPlayer.Character.Animate.climb
+
+newanim2.Archivable = true
+
+newanim2.AnimationId = "http://www.roblox.com/asset/?id=180436334"
+
+newanim2.Name = "Animation1"
+
+newanim2:IsA("Animation")
+
+newanim2.Archivable = true
+
+
+newanim3 = Instance.new("Animation")
+
+newanim3.Parent = game.Players.LocalPlayer.Character.Animate.walk
+
+newanim3.Archivable = true
+
+newanim3.AnimationId = "http://www.roblox.com/asset/?id=252557606"
+
+newanim3.Name = "Animation1"
+
+newanim3:IsA("Animation")
+
+newanim3.Archivable = true
+
+
+newanim4 = Instance.new("Animation")
+
+newanim4.Parent = game.Players.LocalPlayer.Character.Animate.jump
+
+newanim4.Archivable = true
+
+newanim4.AnimationId = "http://www.roblox.com/asset/?id=125750702"
+
+newanim4.Name = "Animation1"
+
+newanim4:IsA("Animation")
+
+newanim4.Archivable = true
+
+
+
+newanim5 = Instance.new("Animation")
+
+newanim5.Parent = game.Players.LocalPlayer.Character.Animate.sit
+
+newanim5.Archivable = true
+
+newanim5.AnimationId = "http://www.roblox.com/asset/?id=178130996"
+
+newanim5.Name = "Animation1"
+
+newanim5:IsA("Animation")
+
+newanim5.Archivable = true
+
+
+
+newanim6 = Instance.new("Animation")
+
+newanim6.Parent = game.Players.LocalPlayer.Character.Animate.toolnone
+
+newanim6.Archivable = true
+
+newanim6.AnimationId = "http://www.roblox.com/asset/?id=182393478"
+
+newanim6.Name = "Animation1"
+
+newanim6:IsA("Animation")
+
+newanim6.Archivable = true
+
+
+
+newanim6 = Instance.new("Animation")
+
+newanim6.Parent = game.Players.LocalPlayer.Character.Animate.fall
+
+newanim6.Archivable = true
+
+newanim6.AnimationId = "http://www.roblox.com/asset/?id=180436148"
+
+newanim6.Name = "Animation1"
+
+newanim6:IsA("Animation")
+
+newanim6.Archivable = true
