@@ -1,3 +1,9 @@
+_G.Hub = "MultiX" -- Replace By Your Hub Name
+_G.DiscordInvite = "XUwJT4HT" -- Replace By Your Discord Invite [REMOVE DISCORD.GG]
+_G.HubLogo = "http://www.roblox.com/asset/?id=36160289" -- Replace By Your Hub Logo
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Lib/main/DiscordInviteRobloxGui.lua"))()
+
 if game.PlaceId == 537413528 then
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/Build%20A%20Boat%20For%20Treasure'),true))()
 end
