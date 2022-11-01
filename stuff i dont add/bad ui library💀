@@ -1,0 +1,102 @@
+local library = {}
+
+local toggled = false
+
+function library:CreateWindow(name)
+    local Design = Instance.new("ScreenGui")
+    local TopMain = Instance.new("Frame")
+    local Container = Instance.new("ImageLabel")
+    local UIGridLayout = Instance.new("UIGridLayout")
+    local Title = Instance.new("TextLabel")
+
+    local ToggleVisible = Instance.new("TextButton")
+
+    UIGridLayout.Parent = Container
+    UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+    UIGridLayout.CellSize = UDim2.new(0, 150, 0, 40)
+
+    Title.Name = "Title"
+    Title.Parent = TopMain
+    Title.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+    Title.BorderSizePixel = 0
+    Title.Position = UDim2.new(0.269406378, 0, 0, 0)
+    Title.Size = UDim2.new(0, 200, 0, 15)
+    Title.Font = Enum.Font.SourceSans
+    Title.Text = "Ui Library Name"
+    Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+    Title.TextSize = 14.000
+    Title.Text = name
+
+    Design.Name = "Design"
+    Design.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+    Design.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+    TopMain.Name = "TopMain"
+    TopMain.Parent = Design
+    TopMain.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+    TopMain.BorderSizePixel = 0
+    TopMain.Position = UDim2.new(0.268217057, 0, 0.40228951, 0)
+    TopMain.Size = UDim2.new(0, 438, 0, 15)
+
+    Container.Name = "Container"
+    Container.Parent = TopMain
+    Container.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+    Container.BackgroundTransparency = 0.500
+    Container.BorderSizePixel = 0
+    Container.Position = UDim2.new(-0.00302892923, 0, 0.936574459, 0)
+    Container.Size = UDim2.new(0, 439, 0, 323)
+    Container.Image = "http://www.roblox.com/asset/?id=36160289"
+    Container.ClipsDescendants = true
+
+    ToggleVisible.Name = "ToggleVisible"
+    ToggleVisible.Parent = TopMain
+    ToggleVisible.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+    ToggleVisible.BorderSizePixel = 0
+    ToggleVisible.Position = UDim2.new(0.924657524, 0, -1.86666667, 0)
+    ToggleVisible.Rotation = 90
+    ToggleVisible.Size = UDim2.new(0, 33, 0, 28)
+    ToggleVisible.Font = Enum.Font.SourceSans
+    ToggleVisible.Text = ">"
+    ToggleVisible.TextColor3 = Color3.fromRGB(255, 255, 255)
+    ToggleVisible.TextSize = 20.000
+    ToggleVisible.MouseButton1Down:Connect(function()
+	     if toggled then
+	         toggled = false
+	         Container:TweenSize(UDim2.new(0, 439,0, 0), "InOut", "Linear", 0.1)
+	         ToggleVisible.Rotation = 270
+	     else
+	        toggled = true
+	        Container:TweenSize(UDim2.new(0, 439,0, 323), "InOut", "Linear", 0.1)
+	        ToggleVisible.Rotation = 90
+	    end
+	 end)
+
+    local EpicLibrary = {}
+
+    function EpicLibrary:CreateButton(text, callback)
+        local callback = callback or function() end
+
+        local TextButton = Instance.new("TextButton")
+
+        TextButton.Parent = Container
+        TextButton.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+        TextButton.BorderSizePixel = 0
+        TextButton.Size = UDim2.new(0, 200, 0, 50)
+        TextButton.Font = Enum.Font.Unknown
+        TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+        TextButton.TextSize = 14.000
+        TextButton.Text = text
+        
+        TextButton.MouseButton1Down:Connect(function()
+        	pcall(callback)
+        end)
+    end
+    return EpicLibrary
+end
+
+local main = library:CreateWindow("MultiX")
+
+main:CreateButton("Infinite yield", function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
