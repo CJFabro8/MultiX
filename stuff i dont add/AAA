@@ -198,3 +198,64 @@ RunService.RenderStepped:Connect(function()
 end)
  
 end)
+
+Window:AddCommand('NoRightLeg', {}, 'Removes your right leg.', function(Arguments, Speaker)
+    game:GetService'Players'.LocalPlayer.Character['Right Leg']:Destroy()
+end)
+
+Window:AddCommand('NoLeftLeg', {}, 'Removes your left leg.', function(Arguments, Speaker)
+    game:GetService'Players'.LocalPlayer.Character['Left Leg']:Destroy()
+end)
+
+Window:AddCommand('NoRightArm', {}, 'Removes your Right arm.', function(Arguments, Speaker)
+    game:GetService'Players'.LocalPlayer.Character['Right Arm']:Destroy()
+end)
+
+Window:AddCommand('NoLeftArm', {}, 'Removes your Left arm.', function(Arguments, Speaker)
+    game:GetService'Players'.LocalPlayer.Character['Left Arm']:Destroy()
+end)
+
+Window:AddCommand('TpTool', {}, 'Click To Teleport.', function(Arguments, Speaker)
+	mouse = game.Players.LocalPlayer:GetMouse()
+	tool = Instance.new("Tool")
+	tool.RequiresHandle = false
+	tool.Name = "Click Teleport"
+	tool.Activated:connect(function()
+	local pos = mouse.Hit+Vector3.new(0,2.5,0)
+	pos = CFrame.new(pos.X,pos.Y,pos.Z)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+	end)
+	tool.Parent = game.Players.LocalPlayer.Backpack
+end)
+
+Window:AddCommand('Reach', {'Reset To Remove'}, 'Makes your range long.', function(Arguments, Speaker)
+    for i,v in pairs(game:GetService'Players'.LocalPlayer.Character:GetChildren())do
+				if v:isA("Tool") then
+					local a = Instance.new("SelectionBox",v.Handle)
+					a.Adornee = v.Handle
+					v.Handle.Size = Vector3.new(0.5,0.5,60)
+					v.GripPos = Vector3.new(0,0,0)
+					lplayer.Character.Humanoid:UnequipTools()
+				end
+			end
+			game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "Notification";
+			Text = "Applied to equipped sword.";
+			})
+end)
+
+Window:AddCommand('Dex', {}, 'Explore Around And Steal Scripts.', function(Arguments, Speaker)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/peyton2465/Dex/master/out.lua"))()
+end)
+
+Window:AddCommand('EnableShiftLock', {}, 'Enable your shiftlock when is setted by developer.', function(Arguments, Speaker)
+    game:GetService('Players').LocalPlayer.DevEnableMouseLock = true
+end)
+
+Window:AddCommand('UnEnableShiftLock', {}, 'UnEnables your shiftlock.', function(Arguments, Speaker)
+    game:GetService('Players').LocalPlayer.DevEnableMouseLock = false
+end)
+
+Window:AddCommand('TeleportGui', {}, 'Teleports you to a player.', function(Arguments, Speaker)
+	loadstring(game:GetObjects('rbxassetid://1730381293')[1].Source)()
+end)
