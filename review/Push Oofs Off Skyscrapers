@@ -1,0 +1,22 @@
+local BlekLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/laderite/bleklib/main/library.lua"))()
+
+local win = BlekLib:Create({
+    Name = "MultiX(Push Oofs Off Skyscrapers)",
+    StartupSound = {
+        Toggle = false,
+        SoundID = "rbxassetid://6958727243",
+        TimePosition = 1
+    }
+})
+
+local maintab = win:Tab('Teleport')
+
+maintab:Button('teleport to 300 OOFS REQUIRED', function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-382.91217041015625, 2.9989004135131836, -107.23500061035156)
+end)
+
+maintab:Button('teleport to VIP DEATHS', function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-239.6404571533203, 2.9989006519317627, -251.7911376953125)
+end)
+
+--the obfuscate made a few mistakes
