@@ -1,0 +1,3 @@
+local clickdetector = game:GetService("Workspace").ButtonPillar.Button.ClickDetector -- path to the click detector
+
+	fireclickdetector(clickdetector)
