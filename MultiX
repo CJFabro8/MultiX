@@ -6,87 +6,44 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Lib/main/Disc
 
 if game.PlaceId == 537413528 then
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/Build%20A%20Boat%20For%20Treasure'),true))()
-end
-
-if game.PlaceId == 10819569010 then
+elseif game.PlaceId == 10819569010 then
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/Fall'),true))()
-end
-
-if game.PlaceId == 6441847031 then
+elseif game.PlaceId == 6441847031 then
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/Chaos'),true))()
-end
-
-if game.PlaceId == 579955134 then
+elseif game.PlaceId == 579955134 then
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/Auto%20Rap%20Battles'),true))()
-end
-
-if game.PlaceId == 522527978 then
+elseif game.PlaceId == 522527978 then
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/The%20Horror%20Mansion'),true))()
-end
-
-if game.PlaceId == 4608737604 then
+elseif game.PlaceId == 4608737604 then
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/Fight'),true))()
-end
-
-if game.PlaceId == 7417228448 then
+elseif game.PlaceId == 7417228448 then
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/POV%3A%20You%20are%20trapped%20in%20your%20bedroom'),true))()
-end
-
-if game.PlaceId == 7791106063 then
+elseif game.PlaceId == 7791106063 then
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/Furry%20infection'),true))()
-end
-
-if game.PlaceId == 1379818574 then
+elseif game.PlaceId == 1379818574 then
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/Push%20Oofs%20Off%20Skyscrapers'),true))()
-end
-
-if game.PlaceId == 3883685688 then
+elseif game.PlaceId == 3883685688 then
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/Living%20Ragdolls'),true))()
-end
-
-if game.PlaceId == 2950277844 then
+elseif game.PlaceId == 2950277844 then
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/The%20Chill%20Elevator'),true))()
-end
-
-if game.PlaceId == 4719070407 then
+elseif game.PlaceId == 4719070407 then
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/The%20Chamber'),true))()
-end
-
-if game.PlaceId == 5984992258 then
+elseif game.PlaceId == 5984992258 then
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/Knockout%5BTesting%5D'),true))()
-end
-
-if game.PlaceId == 11459360004 then
+elseif game.PlaceId == 11459360004 then
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/roblox%20inside%20of%20roblox'),true))()
-end
-
-if game.PlaceId == 25518007 then
+elseif game.PlaceId == 25518007 then
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/Destroy%20The%20Neighborhood'),true))()
-end
-
-if game.PlaceId == 4991655405 then
+elseif game.PlaceId == 4991655405 then
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/The%20Comedy%20Elevator'),true))()
-end
-
-if game.PlaceId == 4869848567 then
+elseif game.PlaceId == 4869848567 then
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/car%20trip'),true))()
-end
-
-if game.PlaceId == 11216791462 then
+elseif game.PlaceId == 11216791462 then
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/Hungry%20Pig'),true))()
+elseif game.PlaceId == 5171093784 then
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/Dont%20Press%20The%20Button%204'),true))()
+elseif game.PlaceId == 6741970382 then
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/Zombie%20Lab'),true))()
+else
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/Universal'),true))()
 end
-
-game.StarterGui:SetCore("SendNotification", {
-    Title    = "!Reminder!"; 
-    Text     = "Type (:Universal) to open the unsupported one"; 
-    Icon     = "http://www.roblox.com/asset/?id=7059346373"; 
-    Duration = 5;
-})
-
-local Player = game.Players.LocalPlayer
-
-Player.Chatted:connect(function(cht)
-	if cht:match(":Universal") then
-		loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/Universal'),true))()
-	end
-end)
