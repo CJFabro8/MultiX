@@ -72,6 +72,10 @@ if game.PlaceId == 4991655405 then
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/The%20Comedy%20Elevator'),true))()
 end
 
+if game.PlaceId == 4869848567 then
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/car%20trip'),true))()
+end
+
 game.StarterGui:SetCore("SendNotification", {
     Title    = "!Reminder!"; 
     Text     = "Type (:Universal) to open the unsupported one"; 
