@@ -48,6 +48,12 @@ elseif game.PlaceId == 6712992897 then
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/crazy'),true))()
 elseif game.PlaceId == 7243254032 then
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/bloody%20baseplate'),true))()
+elseif game.PlaceId == 11108419601 then
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/Slide%20Into%20Rdite'),true))()
+elseif game.PlaceId == 26179791 then
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/Eat%20The%20Noob'),true))()
+elseif game.PlaceId == 6573732104 then
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/untitled%20furry%20game'),true))()
 else
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/Universal'),true))()
 end
