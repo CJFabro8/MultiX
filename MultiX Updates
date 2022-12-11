@@ -1,0 +1,67 @@
+local MultiX = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local information = Instance.new("TextLabel")
+
+MultiX.Name = "MultiX"
+MultiX.Parent = game.CoreGui
+MultiX.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = MultiX
+Frame.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.300746262, 0, 0.223856106, 0)
+Frame.Size = UDim2.new(0, 533, 0, 380)
+
+Title.Name = "Title"
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.fromRGB(117, 142, 255)
+Title.BorderSizePixel = 0
+Title.Size = UDim2.new(0, 533, 0, 50)
+Title.Font = Enum.Font.Cartoon
+Title.Text = "MULTIX UPDATES"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(67, 194, 107)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.898686707, 0, 0, 0)
+TextButton.Size = UDim2.new(0, 54, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+information.Name = "information"
+information.Parent = Frame
+information.BackgroundColor3 = Color3.fromRGB(117, 142, 255)
+information.BackgroundTransparency = 1.000
+information.BorderSizePixel = 0
+information.Position = UDim2.new(0, 0, 0.131578952, 0)
+information.Size = UDim2.new(0, 533, 0, 330)
+information.Font = Enum.Font.Cartoon
+information.Text = "--new game supported 'untitled furry game'"
+information.TextColor3 = Color3.fromRGB(255, 255, 255)
+information.TextSize = 20.000
+information.TextWrapped = true
+information.TextXAlignment = Enum.TextXAlignment.Left
+information.TextYAlignment = Enum.TextYAlignment.Top
+
+local function ZDBSJYC_fake_script()
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+	
+	
+	
+	
+end
+coroutine.wrap(ZDBSJYC_fake_script)()
