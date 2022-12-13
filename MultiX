@@ -4,6 +4,8 @@ _G.HubLogo = "http://www.roblox.com/asset/?id=36160289" -- Replace By Your Hub L
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Lib/main/DiscordInviteRobloxGui.lua"))()
 
+--VERSION 1.04--
+
 if game.PlaceId == 537413528 then
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/Build%20A%20Boat%20For%20Treasure'),true))()
 elseif game.PlaceId == 10819569010 then
