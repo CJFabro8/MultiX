@@ -4,8 +4,6 @@ _G.HubLogo = "http://www.roblox.com/asset/?id=36160289" -- Replace By Your Hub L
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Lib/main/DiscordInviteRobloxGui.lua"))()
 
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/MultiX%20Updates'),true))()
-
 if game.PlaceId == 537413528 then
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/Build%20A%20Boat%20For%20Treasure'),true))()
 elseif game.PlaceId == 10819569010 then
@@ -56,6 +54,8 @@ elseif game.PlaceId == 26179791 then
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/Eat%20The%20Noob'),true))()
 elseif game.PlaceId == 6573732104 then
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/untitled%20furry%20game'),true))()
+elseif game.PlaceId == 6652986175 then
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/Baldi%E2%80%99s%20Ultimate%20RP(DEAD)'),true))()
 else
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/MultiX/main/review/Universal'),true))()
 end
